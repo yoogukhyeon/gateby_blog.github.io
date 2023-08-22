@@ -4,6 +4,7 @@ import Template from 'components/common/Template';
 import PostHead from 'components/post/PostHead';
 import { PostFrontmatterType } from 'types/postItem.types';
 import PostContent from 'components/post/PostContent';
+import CommentWidget from 'components/post/CommentWidget';
 
 type PostTemplateProps = {
   data: {
@@ -26,24 +27,14 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
   },
 }) {
   const {
-    node: {
-      html,
-      frontmatter: {
-        title,
-        summary,
-        date,
-        categories,
-        thumbnail: {
-          childImageSharp: { gatsbyImageData },
-        },
-      },
-    },
+    node: { html, frontmatter },
   } = edges[0];
 
   return (
     <Template>
-      <PostHead title={title} date={date} categories={categories} thumbnail={gatsbyImageData} />
+      <PostHead {...frontmatter} />
       <PostContent html={html} />
+      <CommentWidget />
     </Template>
   );
 };
