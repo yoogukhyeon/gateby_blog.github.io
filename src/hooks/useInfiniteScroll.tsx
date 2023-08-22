@@ -23,15 +23,18 @@ const useInfiniteScroll = function (selectedCategory: string, posts: PostListIte
       ),
     [selectedCategory],
   );
+  let observer = null;
 
-  const observer: IntersectionObserver = new IntersectionObserver((entries, observer) => {
-    if (!entries[0].isIntersecting) return;
+  useEffect(() => {
+    observer = new IntersectionObserver((entries, observer) => {
+      if (!entries[0].isIntersecting) return;
 
-    setCount((value) => value + 1);
-    observer.disconnect();
-  });
+      setCount((value) => value + 1);
+      observer.disconnect();
+    });
+  }, []);
 
-  useEffect(() => setCount(1), [selectedCategory]);
+  observer = useEffect(() => setCount(1), [selectedCategory]);
 
   useEffect(() => {
     if (NUMBER_OF_ITEMS_PER_PAGE * count >= postListByCategory.length || containerRef.current === null || containerRef.current.children.length === 0)
