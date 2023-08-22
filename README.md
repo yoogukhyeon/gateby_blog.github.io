@@ -30,6 +30,9 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     ```shell
     cd my-default-starter/
     gatsby develop
+
+    yarn 버전
+    yarn develop
     ```
 
 1.  **Open the source code and start editing!**
