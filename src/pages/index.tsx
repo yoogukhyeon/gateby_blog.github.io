@@ -1,7 +1,4 @@
 import React, { FunctionComponent, useMemo } from 'react';
-import styled from '@emotion/styled';
-import GlobalStyle from 'components/common/Globalstyle';
-import Footer from 'components/common/Footer';
 import CategoryList, { CategoryListProps } from 'components/main/CategoryList';
 import Introduction from 'components/main/Introduction';
 import PostList from 'components/main/PostList';
@@ -16,6 +13,13 @@ type IndexPageProps = {
     search: string;
   };
   data: {
+    site: {
+      siteMetadata: {
+        title: string;
+        description: string;
+        siteUrl: string;
+      };
+    };
     allMarkdownRemark: {
       edges: PostListItemType[];
     };
@@ -23,22 +27,21 @@ type IndexPageProps = {
       childImageSharp: {
         gatsbyImageData: IGatsbyImageData;
       };
+      publicURL: string;
     };
   };
 };
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-`;
-
 const IndexPage: FunctionComponent<IndexPageProps> = function ({
   location: { search },
   data: {
+    site: {
+      siteMetadata: { title, description, siteUrl },
+    },
     allMarkdownRemark: { edges },
     file: {
       childImageSharp: { gatsbyImageData },
+      publicURL,
     },
   },
 }) {
@@ -71,7 +74,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
   );
 
   return (
-    <Template>
+    <Template title={title} description={description} url={siteUrl} image={publicURL}>
       <Introduction profileImage={gatsbyImageData} />
       <CategoryList selectedCategory={selectedCategory} categoryList={categoryList} />
       <PostList selectedCategory={selectedCategory} posts={edges} />
@@ -83,6 +86,13 @@ export default IndexPage;
 
 export const getPostList = graphql`
   query getPostList {
+    site {
+      siteMetadata {
+        title
+        description
+        siteUrl
+      }
+    }
     allMarkdownRemark(sort: [{ frontmatter: { date: DESC } }, { frontmatter: { title: DESC } }]) {
       edges {
         node {

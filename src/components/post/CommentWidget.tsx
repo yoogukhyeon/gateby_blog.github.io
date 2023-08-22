@@ -1,4 +1,5 @@
 import React, { createRef, FunctionComponent, useEffect } from 'react';
+import styled from '@emotion/styled';
 
 const src = 'https://utteranc.es/client.js';
 const repo = 'yoogukhyeon/gateby_blog.github.io'; // 자신 계정의 레포지토리로 설정
@@ -38,7 +39,13 @@ const CommentWidget: FunctionComponent = function () {
     element.current.appendChild(utterances);
   }, []);
 
-  return <div ref={element} />;
+  return <UtterancesWrapper ref={element} />;
 };
+
+const UtterancesWrapper = styled.div`
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
+`;
 
 export default CommentWidget;
