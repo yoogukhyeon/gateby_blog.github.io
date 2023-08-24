@@ -19,6 +19,7 @@ const Container = styled.main`
 `;
 
 const Template: FunctionComponent<TemplateProps> = function ({ title, description, url, image, children }) {
+  console.log('image::::', image);
   return (
     <Container>
       <Helmet>
