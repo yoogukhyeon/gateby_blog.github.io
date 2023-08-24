@@ -18,8 +18,10 @@ const FooterWrapper = styled.footer`
 const Footer: FunctionComponent = function () {
   return (
     <FooterWrapper>
+      I Deal With A Service That Provides Sports News To Everyone
+      <br />
       Thank You for Visiting My Blog, Have a Good Day 😆
-      <br />© 2021 Developer Yoo, Powered By Gatsby.
+      <br />© 2023 Developer Yoo, Made By Gatsby.
     </FooterWrapper>
   );
 };

@@ -9,7 +9,12 @@ type IntroductionProps = {
 
 const Background = styled.div`
   width: 100%;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  //background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background-image: url('/images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 60%;
+
   color: #ffffff;
 `;
 
@@ -18,9 +23,14 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 768px;
+  width: 1068px;
   height: 400px;
   margin: 0 auto;
+
+  @media (max-width: 1070px) {
+    height: 350px;
+    padding: 0 20px;
+  }
 
   @media (max-width: 768px) {
     width: 100%;
@@ -30,7 +40,7 @@ const Wrapper = styled.div`
 `;
 
 const SubTitle = styled.div`
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
 
   @media (max-width: 768px) {
@@ -38,9 +48,9 @@ const SubTitle = styled.div`
   }
 `;
 
-const Title = styled.div`
+const Title = styled.h1`
   margin-top: 5px;
-  font-size: 35px;
+  font-size: 37px;
   font-weight: 700;
 
   @media (max-width: 768px) {
@@ -52,11 +62,15 @@ const Introduction: FunctionComponent<IntroductionProps> = function ({ profileIm
   return (
     <Background>
       <Wrapper>
-        <ProfileImage profileImage={profileImage} />
+        <ProfileImage profileImage={profileImage} data-sal="slide-up" data-sal-duration="900" data-sal-delay="300" data-sal-easing="ease" />
 
         <div>
-          <SubTitle>Nice to Meet You, martino</SubTitle>
-          <Title>I'm Frontend Developer Yoo.</Title>
+          <SubTitle data-sal="slide-up" data-sal-duration="1000" data-sal-delay="400" data-sal-easing="ease">
+            축구, 야구, 농구 등 다양한 스포츠에 Hot 소식을 공유합니다.
+          </SubTitle>
+          <Title data-sal="slide-up" data-sal-duration="1200" data-sal-delay="500" data-sal-easing="ease">
+            스포츠 뉴스 소식을 공유합니다.
+          </Title>
         </div>
       </Wrapper>
     </Background>

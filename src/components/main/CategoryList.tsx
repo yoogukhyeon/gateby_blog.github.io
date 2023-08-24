@@ -16,14 +16,27 @@ type GatsbyLinkProps = {
 const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => <Link {...props} />)<CategoryItemProps>`
   margin-right: 20px;
   padding: 5px 0;
-  font-size: 18px;
-  font-weight: ${({ active }) => (active ? '800' : '400')};
+  font-size: 21px;
+  font-weight: ${({ active }) => (active ? '900' : '500')};
+  color: ${({ active }) => (active ? '#11264f' : '#000')};
   cursor: pointer;
 
   &:last-of-type {
     margin-right: 0;
   }
 
+  .count {
+    font-size: 16px;
+    color: #444;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 18px;
+
+    .count {
+      font-size: 14px;
+    }
+  }
   @media (max-width: 768px) {
     font-size: 15px;
   }
@@ -38,9 +51,12 @@ export type CategoryListProps = {
 const CategoryListWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  width: 768px;
-  margin: 100px auto 0;
+  width: 1068px;
+  margin: 70px auto 20px;
 
+  @media (max-width: 1070px) {
+    padding: 0 20px;
+  }
   @media (max-width: 768px) {
     width: 100%;
     margin-top: 50px;
@@ -53,7 +69,8 @@ const CategoryList: FunctionComponent<CategoryListProps> = function ({ selectedC
     <CategoryListWrapper>
       {Object.entries(categoryList).map(([name, count]) => (
         <CategoryItem to={`/?category=${name}`} active={name === selectedCategory} key={name}>
-          #{name}({count})
+          {name}
+          <span className="count">({count})</span>
         </CategoryItem>
       ))}
     </CategoryListWrapper>

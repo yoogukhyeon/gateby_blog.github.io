@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `주니어 개발자의 개발 블로그`,
-    description: `주니어 개발자로서의 저를 표현한 블로그입니다.`,
+    title: `Sport Magazine`,
+    description: `다양한 스포츠 소식을 공유합니다.`,
     author: `Hyun`,
-    siteUrl: 'https://gateby-blog-github-io.vercel.app',
+    siteUrl: 'https://news.everyday-365.com',
   },
   plugins: [
     'gatsby-plugin-sitemap',
@@ -16,7 +16,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://gateby-blog-github-io.vercel.app',
+        siteUrl: 'https://news.everyday-365.com',
         stripQueryString: true,
       },
     },
@@ -53,6 +53,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/static`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/static/images`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -93,6 +100,21 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+
+    {
+      resolve: `gatsby-plugin-scroll-reveal`,
+      options: {
+        threshold: 1,
+        once: true,
+        disable: false,
+        selector: '[data-sal]',
+        animateClassName: 'sal-animate',
+        disabledClassName: 'sal-disabled',
+        rootMargin: '10% 10%',
+        enterEventName: 'sal:in',
+        exitEventName: 'sal:out',
       },
     },
   ],

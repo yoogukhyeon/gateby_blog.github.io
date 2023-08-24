@@ -60,7 +60,7 @@ const PrevPageIcon = styled.div`
   }
 `;
 
-const Title = styled.div`
+const Title = styled.h1`
   display: -webkit-box;
   overflow: hidden;
   overflow-wrap: break-word;
@@ -69,7 +69,7 @@ const Title = styled.div`
   white-space: normal;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  font-size: 45px;
+  font-size: 47px;
   font-weight: 800;
 
   @media (max-width: 768px) {
@@ -82,7 +82,7 @@ const PostData = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
 
   @media (max-width: 768px) {
