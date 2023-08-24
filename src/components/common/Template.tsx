@@ -43,6 +43,8 @@ const Template: FunctionComponent<TemplateProps> = function ({ title, descriptio
         <meta name="twitter:creator" content="@사용자이름" />
 
         <html lang="ko" />
+        <link rel="shortcut icon" href="favicon.png" />
+        <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" />
       </Helmet>
 
       <GlobalStyle />
