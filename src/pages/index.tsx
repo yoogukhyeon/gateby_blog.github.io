@@ -18,6 +18,7 @@ type IndexPageProps = {
         title: string;
         description: string;
         siteUrl: string;
+        image: string;
       };
     };
     allMarkdownRemark: {
@@ -36,7 +37,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
   location: { search },
   data: {
     site: {
-      siteMetadata: { title, description, siteUrl },
+      siteMetadata: { title, description, siteUrl, image },
     },
     allMarkdownRemark: { edges },
     file: {
@@ -74,7 +75,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
   );
 
   return (
-    <Template title={title} description={description} url={siteUrl} image={publicURL}>
+    <Template title={title} description={description} url={siteUrl} image={image}>
       <Introduction profileImage={gatsbyImageData} />
       <CategoryList selectedCategory={selectedCategory} categoryList={categoryList} />
       <PostList selectedCategory={selectedCategory} posts={edges} />
@@ -91,6 +92,7 @@ export const getPostList = graphql`
         title
         description
         siteUrl
+        image
       }
     }
     allMarkdownRemark(sort: [{ frontmatter: { date: DESC } }, { frontmatter: { title: DESC } }]) {
