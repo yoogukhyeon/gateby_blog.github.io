@@ -19,12 +19,12 @@ const Container = styled.main`
 `;
 
 const Template: FunctionComponent<TemplateProps> = function ({ title, description, url, image, children }) {
-  console.log('image::::', image);
   return (
     <Container>
       <Helmet>
         <title>{title}</title>
-
+        <meta name="google-site-verification" content="LyKV5XqH5LxkNQ9d3YUtbrDEmauUZg3oOX1dd4yTU04" />
+        <meta name="naver-site-verification" content="44fec3916e340a23a159ce82c2e183f2688e3faa" />
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
