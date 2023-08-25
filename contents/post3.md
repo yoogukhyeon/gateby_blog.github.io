@@ -1,7 +1,7 @@
 ---
 date: '2023-08-14'
 title: 'MLB 믈브) 텍사스 vs LA에인절스(오타니) 야구분석'
-categories: ['축구']
+categories: ['분석']
 summary: 'MLB 믈브) 텍사스 vs LA에인절스(오타니) 야구분석'
 thumbnail: './post3.png'
 ---
