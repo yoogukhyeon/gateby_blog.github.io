@@ -23,6 +23,11 @@ const defaultStyle = css`
     text-decoration: none;
     cursor: pointer;
   }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 const GlobalStyle: FunctionComponent = function () {
