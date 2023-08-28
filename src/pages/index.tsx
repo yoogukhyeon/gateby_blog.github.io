@@ -97,7 +97,8 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
 };
 
 const KakaoAdfitWrap = styled.div<{ type?: boolean }>`
-  width: 1068px;
+  width: 100%;
+  max-width: 1068px;
   margin: ${({ type }) => (type ? '0' : '70px')} auto 0;
 `;
 
