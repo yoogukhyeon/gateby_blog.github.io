@@ -7,8 +7,10 @@ import { PostListItemType } from 'types/postItem.types';
 import { IGatsbyImageData } from 'gatsby-plugin-image';
 import queryString, { ParsedQuery } from 'query-string';
 import Template from 'components/common/Template';
-import KakaoAdfit from 'components/adfit/KakaoAdfit';
 import styled from '@emotion/styled';
+import KakaoTopAdfit from 'components/adfit/KakaoTopAdfit';
+import KakaoMiddleAdfit from 'components/adfit/KakaoMiddleAdfit';
+import KakaoBottomAdfit from 'components/adfit/KakaoBottomAdfit';
 
 type IndexPageProps = {
   location: {
@@ -80,15 +82,15 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
     <Template title={title} description={description} url={siteUrl} image={image}>
       <Introduction profileImage={gatsbyImageData} />
       <KakaoAdfitWrap>
-        <KakaoAdfit />
+        <KakaoTopAdfit />
       </KakaoAdfitWrap>
       <CategoryList selectedCategory={selectedCategory} categoryList={categoryList} />
       <KakaoAdfitWrap>
-        <KakaoAdfit />
+        <KakaoMiddleAdfit />
       </KakaoAdfitWrap>
       <PostList selectedCategory={selectedCategory} posts={edges} />
       <KakaoAdfitWrap type={true}>
-        <KakaoAdfit />
+        <KakaoBottomAdfit />
       </KakaoAdfitWrap>
     </Template>
   );
