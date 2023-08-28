@@ -21,28 +21,26 @@ function KakaoBottomAdfit() {
     if (winodwSize < 1024) {
       ins.setAttribute('data-ad-width', '320');
       ins.setAttribute('data-ad-height', '100');
-      ins.setAttribute('data-ad-unit', '320x100 사이즈의 광고 ID');
+      ins.setAttribute('data-ad-unit', 'DAN-te3JwoEv4dfLbMhe');
     } else {
       ins.setAttribute('data-ad-width', '728');
       ins.setAttribute('data-ad-height', '90');
-      ins.setAttribute('data-ad-unit', '728x90 사이즈의 광고 ID');
+      ins.setAttribute('data-ad-unit', 'DAN-qmugCJ9Jio1KESDP');
     }
 
     script.async = true;
     script.type = 'text/javascript';
     script.src = '//t1.daumcdn.net/kas/static/ba.min.js';
 
-    document.querySelector('.aside__kakaoAdFit')?.appendChild(ins);
-    document.querySelector('.aside__kakaoAdFit')?.appendChild(script);
+    document.querySelector('.div_bottom__kakaoAdFit')?.appendChild(ins);
+    document.querySelector('.div_bottom__kakaoAdFit')?.appendChild(script);
 
     // 광고 로딩 여부 상태 변경
     adRef.current = true;
   }, []);
   return (
     <>
-      <aside className="aside__kakaoAdFit" style={{ color: '#222' }}>
-        123123
-      </aside>
+      <aside className="div_bottom__kakaoAdFit"></aside>
     </>
   );
 }
