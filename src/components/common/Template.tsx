@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import GlobalStyle from 'components/common/Globalstyle';
 import Footer from 'components/common/Footer';
 import { Helmet } from 'react-helmet';
+import KakaoFixedAdfit from 'components/adfit/KakaoFixedAdfit';
 
 type TemplateProps = {
   title: string;
@@ -40,8 +41,8 @@ const Template: FunctionComponent<TemplateProps> = function ({ title, descriptio
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />
-        <meta name="twitter:site" content="@사용자이름" />
-        <meta name="twitter:creator" content="@사용자이름" />
+        <meta name="twitter:site" content="@yoogukhyeon" />
+        <meta name="twitter:creator" content="@yoogukhyeon" />
 
         <html lang="ko" />
         <link rel="shortcut icon" href="favicon.png" />
@@ -50,8 +51,19 @@ const Template: FunctionComponent<TemplateProps> = function ({ title, descriptio
 
       <GlobalStyle />
       {children}
+      <FixedAdfitWrap>
+        <KakaoFixedAdfit />
+      </FixedAdfitWrap>
       <Footer />
     </Container>
   );
 };
+
+const FixedAdfitWrap = styled.div`
+  position: fixed;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  text-align: center;
+`;
 export default Template;

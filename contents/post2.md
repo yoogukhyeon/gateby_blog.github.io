@@ -1,7 +1,7 @@
 ---
 date: '2023-08-18'
 title: '리오넬 메시의 화려한 데뷔 시즌과 인터 마이애미의 역사적 리그스 컵 우승'
-categories: ['축구']
+categories: ['해외축구']
 summary: '리오넬 메시의 화려한 데뷔 시즌과 인터 마이애미의 역사적 리그스 컵 우승'
 thumbnail: './post2.webp'
 ---

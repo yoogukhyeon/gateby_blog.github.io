@@ -1,7 +1,7 @@
 ---
 date: '2023-08-27'
 title: '포스테코글루의 토트넘 리그 2연승'
-categories: ['축구역사']
+categories: ['해외축구']
 summary: '포스테코글루의 토트넘 리그 2연승'
 thumbnail: './post9.png'
 ---

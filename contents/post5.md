@@ -1,7 +1,7 @@
 ---
 date: '2023-08-20'
 title: '세계에서 가장 높은 연봉을 받는 축구 선수 8명 중 8명, 사우디 리그'
-categories: ['축구']
+categories: ['축구역사']
 summary: '세계에서 가장 높은 연봉을 받는 축구 선수 8명 중 8명, 사우디 리그'
 thumbnail: './post5.webp'
 ---

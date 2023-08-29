@@ -1,7 +1,7 @@
 ---
 date: '2023-08-19'
 title: '클린스만 감독과 "재택근무" 논란의 진실'
-categories: ['축구']
+categories: ['국내축구']
 summary: '클린스만 감독과 "재택근무" 논란의 진실'
 thumbnail: './post4.webp'
 ---
