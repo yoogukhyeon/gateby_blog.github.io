@@ -1,6 +1,6 @@
 ---
 date: '2023-09-01'
-title: '[오피셜] 23-24 UEFA 챔피언스리그(UCL) 조 추첨 완료. '죽음의 F조''
+title: '[오피셜] 23-24 UEFA 챔피언스리그(UCL) 조 추첨 완료. '죽음의 F조'
 categories: ['해외축구']
 summary: '[오피셜] 23-24 UEFA 챔피언스리그(UCL) 조 추첨 완료. '죽음의 F조''
 thumbnail: './post16.jpeg'
