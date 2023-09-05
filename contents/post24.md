@@ -129,6 +129,6 @@ thumbnail: './post24.jpeg'
 
 **관련 소식**
 
-- [국내축구](https://news.everyday-365.com/post20/)
+- ["EPL 통산 네 번째 해트트릭" SON, "전설" 드록바 넘었다...토트넘은 2위로 점프+리그 무패 행진](https://news.everyday-365.com/post20/)
 
-- [국내축구](https://news.everyday-365.com/post13/)
+- [김민재의 바이에른 뮌헨 적응과 UCL 우승 도전](https://news.everyday-365.com/post13/)

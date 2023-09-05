@@ -76,6 +76,6 @@ thumbnail: './post23.jpeg'
 
 **관련 소식**
 
-- [국내축구](https://news.everyday-365.com/post14/)
+- [90분 뛸 선수는 손흥민뿐” 푸념→아이러니한 공격수 선택, 책임은 클린스만에게](https://news.everyday-365.com/post14/)
 
-- [국내축구](https://news.everyday-365.com/post4/)
+- [클린스만 감독과 "재택근무" 논란의 진실](https://news.everyday-365.com/post4/)
