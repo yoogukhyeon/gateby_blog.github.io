@@ -3,7 +3,7 @@ date: '2023-09-06'
 title: '"셀틱 트리오" 언급한 클린스만 감독, "유럽 진출 시도 격려해야, 안 되면 자국 리그 가면 된다"'
 categories: ['국내축구']
 summary: '"셀틱 트리오" 언급한 클린스만 감독, "유럽 진출 시도 격려해야, 안 되면 자국 리그 가면 된다"'
-thumbnail: './post24.jpeg'
+thumbnail: './post25.jpeg'
 ---
 
 ![](https://imgnews.pstatic.net/image/343/2023/09/06/0000123747_001_20230906114201342.jpg?type=w647)
