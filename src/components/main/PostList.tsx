@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useMemo } from 'react';
+import React, { FunctionComponent } from 'react';
 import styled from '@emotion/styled';
 import PostItem from './PostItem';
 import { PostListItemType } from 'types/postItem.types';
@@ -35,6 +35,8 @@ const PostListWrapper = styled.div`
 
 const PostList: FunctionComponent<PostListProps> = function ({ selectedCategory, posts }) {
   const { containerRef, postList }: useInfiniteScrollType = useInfiniteScroll(selectedCategory, posts);
+
+  console.log('postList::::', postList);
 
   return (
     <PostListWrapper ref={containerRef}>

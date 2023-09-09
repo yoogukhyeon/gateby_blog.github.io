@@ -11,6 +11,9 @@ import styled from '@emotion/styled';
 import KakaoTopAdfit from 'components/adfit/KakaoTopAdfit';
 import KakaoMiddleAdfit from 'components/adfit/KakaoMiddleAdfit';
 import KakaoBottomAdfit from 'components/adfit/KakaoBottomAdfit';
+import TenpingTop from 'components/tenping/TenpingTop';
+import TenpingMiddle from 'components/tenping/TenpingMiddle';
+import TenpingBootom from 'components/tenping/TenpingBootom';
 
 type IndexPageProps = {
   location: {
@@ -82,15 +85,15 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
     <Template title={title} description={description} url={siteUrl} image={image}>
       <Introduction profileImage={gatsbyImageData} />
       <KakaoAdfitWrap>
-        <KakaoTopAdfit />
+        <TenpingTop />
       </KakaoAdfitWrap>
       <CategoryList selectedCategory={selectedCategory} categoryList={categoryList} />
       <KakaoAdfitWrap>
-        <KakaoMiddleAdfit />
+        <TenpingMiddle />
       </KakaoAdfitWrap>
       <PostList selectedCategory={selectedCategory} posts={edges} />
       <KakaoAdfitWrap type={true}>
-        <KakaoBottomAdfit />
+        <TenpingBootom />
       </KakaoAdfitWrap>
     </Template>
   );
