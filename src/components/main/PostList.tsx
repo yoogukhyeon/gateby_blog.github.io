@@ -36,8 +36,6 @@ const PostListWrapper = styled.div`
 const PostList: FunctionComponent<PostListProps> = function ({ selectedCategory, posts }) {
   const { containerRef, postList }: useInfiniteScrollType = useInfiniteScroll(selectedCategory, posts);
 
-  console.log('postList::::', postList);
-
   return (
     <PostListWrapper ref={containerRef}>
       {postList.map(
