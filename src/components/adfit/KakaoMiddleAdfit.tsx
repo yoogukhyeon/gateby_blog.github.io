@@ -21,11 +21,11 @@ function KakaoMiddleAdfit() {
     if (winodwSize < 1024) {
       ins.setAttribute('data-ad-width', '320');
       ins.setAttribute('data-ad-height', '100');
-      ins.setAttribute('data-ad-unit', 'DAN-da8NpgQvkHGytczK');
+      ins.setAttribute('data-ad-unit', 'DAN-dIjoLaX8P2ccBFkn');
     } else {
       ins.setAttribute('data-ad-width', '728');
       ins.setAttribute('data-ad-height', '90');
-      ins.setAttribute('data-ad-unit', 'DAN-zsECY2CDXsg2Rg12');
+      ins.setAttribute('data-ad-unit', 'DAN-3eQZlIT5YMCpRGFj');
     }
 
     script.async = true;
