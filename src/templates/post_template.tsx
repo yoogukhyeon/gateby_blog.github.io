@@ -6,9 +6,9 @@ import { PostFrontmatterType } from 'types/postItem.types';
 import PostContent from 'components/post/PostContent';
 import CommentWidget from 'components/post/CommentWidget';
 import styled from '@emotion/styled';
-import TenpingTop from 'components/tenping/TenpingTop';
-import TenpingMiddle from 'components/tenping/TenpingMiddle';
-import TenpingBootom from 'components/tenping/TenpingBootom';
+import KakaoTopAdfit from 'components/adfit/KakaoTopAdfit';
+import KakaoMiddleAdfit from 'components/adfit/KakaoMiddleAdfit';
+import KakaoBottomAdfit from 'components/adfit/KakaoBottomAdfit';
 
 type PostTemplateProps = {
   data: {
@@ -54,15 +54,15 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
     <Template title={title} description={summary} url={href} image={publicURL}>
       <PostHead title={title} date={date} categories={categories} thumbnail={gatsbyImageData} />
       <KakaoAdfitWrap>
-        <TenpingTop />
+        <KakaoTopAdfit />
       </KakaoAdfitWrap>
       <PostContent html={html} />
       <KakaoAdfitWrap>
-        <TenpingMiddle />
+        <KakaoMiddleAdfit />
       </KakaoAdfitWrap>
       <CommentWidget />
       <KakaoAdfitWrap type={true}>
-        <TenpingBootom />
+        <KakaoBottomAdfit />
       </KakaoAdfitWrap>
     </Template>
   );
