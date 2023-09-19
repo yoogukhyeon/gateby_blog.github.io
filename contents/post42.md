@@ -3,7 +3,7 @@ date: '2023-09-19'
 title: 'K리그, 다시 한번 아시아 정상 노린다…2023~24 ACL 첫발'
 categories: ['국내축구']
 summary: 'K리그, 다시 한번 아시아 정상 노린다…2023~24 ACL 첫발'
-thumbnail: './post41.jpeg'
+thumbnail: './post42.jpeg'
 ---
 
 ![](https://imgnews.pstatic.net/image/241/2023/09/19/0003301651_001_20230919131101268.jpg?type=w647)<br/>K리그 4개 팀이 다시 한번 ACL 우승 트로피에 도전한다. 사진=프로축구연맹
