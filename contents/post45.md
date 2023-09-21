@@ -3,7 +3,7 @@ date: '2023-09-21'
 title: '"메시가 심상치 않다" 2경기 쉰 메시, 토론토전 37분만에 교체 OUT→US컵 결승 앞두고 등부상 암울'
 categories: ['해외축구']
 summary: '"메시가 심상치 않다" 2경기 쉰 메시, 토론토전 37분만에 교체 OUT→US컵 결승 앞두고 등부상 암울'
-thumbnail: './post44.jpeg'
+thumbnail: './post45.jpeg'
 ---
 
 ![](https://imgnews.pstatic.net/image/076/2023/09/21/2023092101001630800207311_20230921144704150.jpg?type=w647)
