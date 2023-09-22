@@ -110,12 +110,6 @@ const EverydayBg = styled.div`
   background-color: #000000;
   color: #ffffff;
   cursor: pointer;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    transform: scale(1.1);
-    transition: all 0.3s ease-in-out;
-  }
 
   @media (max-width: 768px) {
     height: 50px;
