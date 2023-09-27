@@ -8,9 +8,9 @@ import { IGatsbyImageData } from 'gatsby-plugin-image';
 import queryString, { ParsedQuery } from 'query-string';
 import Template from 'components/common/Template';
 import styled from '@emotion/styled';
-import KakaoTopAdfit from 'components/adfit/KakaoTopAdfit';
-import KakaoMiddleAdfit from 'components/adfit/KakaoMiddleAdfit';
-import KakaoBottomAdfit from 'components/adfit/KakaoBottomAdfit';
+import TenpingTop from 'components/tenping/TenpingTop';
+import TenpingMiddle from 'components/tenping/TenpingMiddle';
+import TenpingBootom from 'components/tenping/TenpingBootom';
 
 type IndexPageProps = {
   location: {
@@ -86,15 +86,15 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
       <Introduction profileImage={gatsbyImageData} />
       <EverydayBg onClick={goToScore}></EverydayBg>
       <KakaoAdfitWrap>
-        <KakaoTopAdfit />
+        <TenpingTop />
       </KakaoAdfitWrap>
       <CategoryList selectedCategory={selectedCategory} categoryList={categoryList} />
       <KakaoAdfitWrap>
-        <KakaoMiddleAdfit />
+        <TenpingMiddle />
       </KakaoAdfitWrap>
       <PostList selectedCategory={selectedCategory} posts={edges} />
       <KakaoAdfitWrap type={true}>
-        <KakaoBottomAdfit />
+        <TenpingBootom />
       </KakaoAdfitWrap>
     </Template>
   );

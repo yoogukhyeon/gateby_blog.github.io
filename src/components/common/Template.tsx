@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import GlobalStyle from 'components/common/Globalstyle';
 import Footer from 'components/common/Footer';
 import { Helmet } from 'react-helmet';
-import KakaoFixedAdfit from 'components/adfit/KakaoFixedAdfit';
+import TenpingFixed from 'components/tenping/TenpingFixed';
 
 type TemplateProps = {
   title: string;
@@ -57,7 +57,7 @@ const Template: FunctionComponent<TemplateProps> = function ({ title, descriptio
       <GlobalStyle />
       {children}
       <FixedAdfitWrap>
-        <KakaoFixedAdfit />
+        <TenpingFixed />
       </FixedAdfitWrap>
       <Footer />
     </Container>
