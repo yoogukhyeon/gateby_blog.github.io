@@ -19,7 +19,7 @@ function TenpingBottom() {
 
     // 윈도우 사이즈에 따라 광고 사이즈 조정(사이즈마다 해당 광고 단위 ID 적용)
     ins.setAttribute('tenping-ad-client', 'DgNTPgnQ%2fP73%2f%2fW2yTL1DSD1bw3h0ihw0vphY3o0QT%2bst5R2vPnxxrxC0Jqr6Ebq');
-    ins.setAttribute('tenping-ad-display-type', '67%2be3LHzHbblsB9oLrOpWQ%3d%3d');
+    ins.setAttribute('tenping-ad-display-type', '1LawCE8FqKOhetXZhMopsQ%3d%3d');
 
     script.async = true;
     script.type = 'text/javascript';
