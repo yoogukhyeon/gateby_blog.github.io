@@ -22,7 +22,7 @@ function TenpingBottom() {
     ins.setAttribute('tenping-ad-display-type', '1LawCE8FqKOhetXZhMopsQ%3d%3d');
 
     script.async = true;
-    script.type = 'text/javascript';
+    //script.type = 'text/javascript';
     script.src = '//ads.tenping.kr/scripts/adsbytenping.min.js';
 
     document.querySelector('.div_top__bottom')?.appendChild(ins);
