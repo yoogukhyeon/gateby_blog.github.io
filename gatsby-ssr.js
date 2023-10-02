@@ -7,12 +7,9 @@
 /**
  * @type {import('gatsby').GatsbySSR['onRenderBody']}
  */
-exports.onRenderBody = ({ setHtmlAttributes }) => {
+exports.onRenderBody = ({ setHtmlAttributes, setHeadComponents }) => {
   setHtmlAttributes({ lang: `ko` });
-};
-
-exports.onrenderbody = ({ setheadcomponents }, pluginoptions) => {
-  setheadcomponents([
+  setHeadComponents([
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-csxorxvzctkaix6yvo6hppczgetbymgwsflbw8hfcjo="
