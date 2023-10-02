@@ -11,7 +11,7 @@ exports.onRenderBody = ({ setHtmlAttributes }) => {
   setHtmlAttributes({ lang: `ko` });
 };
 
-export const onrenderbody = ({ setheadcomponents }, pluginoptions) => {
+exports.onrenderbody = ({ setheadcomponents }, pluginoptions) => {
   setheadcomponents([
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
