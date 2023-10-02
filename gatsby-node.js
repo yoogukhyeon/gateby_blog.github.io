@@ -14,9 +14,6 @@ exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
         hooks: path.resolve(__dirname, 'src/hooks'),
       },
     },
-    externals: {
-      jquery: 'jQuery',
-    },
   });
 };
 
