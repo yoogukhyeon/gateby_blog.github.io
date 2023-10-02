@@ -68,7 +68,7 @@ const FixedAdfitWrap = styled.div`
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -4px;
+  bottom: -17px;
   width: 100%;
   max-width: 1068px;
   text-align: center;
