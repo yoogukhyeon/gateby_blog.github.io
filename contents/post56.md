@@ -3,7 +3,7 @@ date: '2023-10-04'
 title: '"6명 방출해달라" 알론소가 요구한 부임 조건에…레알과 의견 충돌'
 categories: ['해외축구']
 summary: '"6명 방출해달라" 알론소가 요구한 부임 조건에…레알과 의견 충돌'
-thumbnail: './post56.jpg'
+thumbnail: './post56.jpeg'
 ---
 
 ![](https://imgnews.pstatic.net/image/139/2023/10/04/0002190504_001_20231004144101191.jpg?type=w647)

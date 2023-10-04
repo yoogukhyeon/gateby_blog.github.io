@@ -3,7 +3,7 @@ date: '2023-10-04'
 title: '"김민재 풀타임" 바이에른 뮌헨, UCL 2차전 코펜하겐에 2-1 역전승…평점 8.4 최고평점'
 categories: ['해외축구']
 summary: '"김민재 풀타임" 바이에른 뮌헨, UCL 2차전 코펜하겐에 2-1 역전승…평점 8.4 최고평점'
-thumbnail: './post55.jpg'
+thumbnail: './post55.jpeg'
 ---
 
 ![](https://imgnews.pstatic.net/image/382/2023/10/04/0001078718_001_20231004154501346.jpg?type=w647)<br>[게티이미지코리아]
